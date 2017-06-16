@@ -2,25 +2,70 @@
 <html>
 <head>
 	<title>Student Bio</title>
+	<style>
+		p {
+			margin:0px;
+		}
+		body {
+			font-family: Courier;
+		}
+
+		img {
+			border: 2px solid black;
+			margin: 0 auto;
+			display:block;
+			width:100%;
+		}
+		
+		.bodydiv {
+			background-color: beige;
+			width:100%;
+
+		}
+
+		.innerdiv {
+
+			float:left;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+
+		.clearfix {
+			clear:both;
+			margin-bottom:40px;
+		}
+		
+		h1 {
+			background-color: black;
+			color:white;
+			text-align: center;
+			padding:20px;
+			margin:0px;
+		}
+
+	</style>
 </head>
 <body>
 	<h1>Student Bio</h1>
-	<h2>Your Name</h2>
-	<img src="IMG_0773.jpg">
-	<p>Write a short paragraph or two about yourself, or use a placeholder text from <a href="www.lipsum.com">www.lipsum.com</a></p>
-
-	<h2>Contact Info</h2>
-	<ul>
-		<li><strong>Email:</strong><a href="mailto:someplace@gmail.com">someplace@gmail.com</a></li>
-		<li><strong>Github:</strong><a href="http://github.com" target="_blank">Adam</a></li>
-		<li><strong>Portfolio:</strong><a href="#">Coming Soon</a></li>
-	</ul>
-
-	<style>
-		img {
-			height:300px;
-		}
-	</style>
-
+	<div class="bodydiv">
+		<div class="innerdiv" style="width:60%">
+			<h2>Your name</h2>
+			<div class="innerdiv" style="width:35%">
+				<img src="IMG_0773.jpg">
+			</div>
+			<div class="innerdiv" style="width:55%">
+				<p>Write a short paragraph or two about yourself, or use a placeholder text from <a href="http://www.lipsum.com">www.lipsum.com</a></p>
+			</div>
+		</div>
+		<div  class="innerdiv" style="width:35%">
+			<h2>Contact Info</h2>
+			<ul>
+				<li><strong>Email:</strong><a href="mailto:someplace@gmail.com">someplace@gmail.com</a></li>
+				<li><strong>Github:</strong><a href="http://github.com" target="_blank">Adam</a></li>
+				<li><strong>Portfolio:</strong><a href="#">Coming Soon</a></li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
 </body>
 </html>
